@@ -5,4 +5,4 @@ for i in range(100):
     if i == 99:
         print(i)
         break
-    print("{}".format(i), end", ")
+    print("{}".format(i), end=", ")
