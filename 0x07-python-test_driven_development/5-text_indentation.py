@@ -9,10 +9,10 @@ def text_indentation(text):
     Args:
         text(str): The string to be printed
     Raises:
-        TypeError: If text is nit a string
+        TypeError: If text is not a string
     '''
 
-    if not isinstance(text str):
+    if not isinstance(text, str):
         raise TypeError("text must be a string")
 
     count = 0
