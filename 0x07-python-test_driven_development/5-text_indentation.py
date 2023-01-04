@@ -5,15 +5,15 @@ This module contains a function that indents text
 
 
 def text_indentation(text):
-    """This function that prints a text with 2 new lines after each of these characters: ., ? and :
+    '''This function that prints a text with 2 new lines after each of these characters: ".", "?" or ":"
     Args:
         text(str): The string to be printed
     Raises:
         TypeError: If text is nit a string
-    """
+    '''
 
     if not isinstance(text str):
-        raise TypeError("text is not a string")
+        raise TypeError("text must be a string")
 
     count = 0
     while count < len(text) and text[count] == " ":
