@@ -104,7 +104,7 @@ def recursive_solve(board, row, queens, solution):
             solutions = recursive_solve(tmp_board, row + 1,
                                         queens + 1, solutions)
 
-    return
+    return (solutions)
 
 
 if __name__ = "__main__":
@@ -113,6 +113,9 @@ if __name__ = "__main__":
         sys.exit(1)
     if sys.argv[1].isdigit() is False:
         print("N must be a number")
+        sys.exit(1)
+    if int(sys.argv[1]) < 4:
+        print("N must be at least 4")
         sys.exit(1)
 
     board = init_board(int(sys.argv[1]))
